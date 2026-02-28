@@ -63,14 +63,14 @@ ollama pull llama3.2
 Download one or more market research PDFs and place them in the `data/` folder.
 
 **Recommended free reports to start with:**
-- [Ofcom Children and Parents: Media Use and Attitudes Report](https://www.ofcom.org.uk/research-and-data/telecoms-research/children-and-parents-media-use-and-attitudes)
-- [Ofcom Online Nation Report](https://www.ofcom.org.uk/research-and-data/internet-and-on-demand-research/online-nation)
+- [childrens-media-literacy-report-2025](https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/children/childrens-media-use-and-attitudes-report-2025/childrens-media-literacy-report-2025.pdf?v=396621)
+- ...
 
 ```
 insightbot/
 └── data/
-    ├── ofcom-childrens-media-use-2024.pdf
-    └── ofcom-online-nation-2024.pdf
+    ├── childrens-media-literacy-report-2025.pdf
+    └── ...
 ```
 
 ### 4. Ingest documents (run once, or when you add new PDFs)
@@ -88,12 +88,12 @@ This will:
 Expected output:
 ```
 [1/3] Loading PDFs from 'data/'...
-  Loading: ofcom-childrens-media-use-2024.pdf
-    → 124 pages loaded
+  Loading: childrens-media-literacy-report-2025.pdf
+    → <no_pages> pages loaded
 [2/3] Chunking documents...
-  Total chunks created: 847
+  Total chunks created: <no_chunks>
 [3/3] Embedding and storing in ChromaDB...
-  ✓ Done! 847 chunks stored in 'chroma_db/'
+  ✓ Done! <no_chunks> chunks stored in 'chroma_db/'
 ```
 
 ### 5. Launch the app
@@ -109,9 +109,9 @@ Open your browser at `http://localhost:8501`
 ## Example questions to try
 
 - *"What devices do children most commonly use to access the internet?"*
-- *"How has social media use among under-13s changed over the past five years?"*
+- *"How has screen time changed in the past five years?"*
 - *"What are the main concerns parents have about their children's online activity?"*
-- *"What percentage of children have seen harmful content online?"*
+- *"What percentage of children use social media, and at what age do they start?"*
 
 ---
 
